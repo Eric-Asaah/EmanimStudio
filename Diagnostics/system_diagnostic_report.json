@@ -1,0 +1,91 @@
+{
+  "status": "HEALTHY",
+  "issues": [],
+  "recommendations": [],
+  "environment": {},
+  "structure": {
+    "Core": {
+      "EmanimStudio.bat": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\EmanimStudio.bat",
+        "type": "file"
+      },
+      "diagnostics.py": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\diagnostics.py",
+        "type": "file"
+      },
+      "diagnose.bat": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\diagnose.bat",
+        "type": "file"
+      },
+      "fix_environment.bat": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\fix_environment.bat",
+        "type": "file"
+      }
+    },
+    "Libraries": {
+      "Lib/python312/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Lib\\python312",
+        "type": "directory"
+      },
+      "Lib/site-packages/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Lib\\site-packages",
+        "type": "directory"
+      },
+      "Lib/ffmpeg-8.0-essentials_build/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Lib\\ffmpeg-8.0-essentials_build",
+        "type": "directory"
+      }
+    },
+    "Application": {
+      "GUI/index.html": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\GUI\\index.html",
+        "type": "file"
+      },
+      "GUI/animations_list.json": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\GUI\\animations_list.json",
+        "type": "file"
+      },
+      "GUI/styles.css": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\GUI\\styles.css",
+        "type": "file"
+      },
+      "GUI/script.js": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\GUI\\script.js",
+        "type": "file"
+      },
+      "Scripts/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Scripts",
+        "type": "directory"
+      },
+      "Animations/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Animations",
+        "type": "directory"
+      },
+      "Output/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Output",
+        "type": "directory"
+      },
+      "Miktex/": {
+        "exists": true,
+        "path": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio\\Miktex",
+        "type": "directory"
+      }
+    }
+  },
+  "dependencies": {},
+  "gui_type": "web_based"
+}

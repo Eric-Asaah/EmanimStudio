@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/1141155939_3147051823_223132457.mp4'
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/3317961657_3168160300_3511192571.mp4'
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/3317961657_3239717063_842724312.mp4'
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/3317961657_3248633133_2004302269.mp4'
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/3317961657_762586130_3482220899.mp4'
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/AMPLOGO/480p15/partial_movie_files/AMPLogo/3317961657_1236844819_4130836065.mp4'

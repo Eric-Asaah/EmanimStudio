@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Output/videos/Pendulum/1080p60/partial_movie_files/Pendulum/3529212410_763129570_3464169656.mp4'

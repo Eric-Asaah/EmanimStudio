@@ -1,0 +1,6 @@
+2025-10-20 08:47:29,811Z INFO  mpmcli - this is mpmcli 4.4 (MiKTeX 24.1 Portable)
+2025-10-20 08:47:29,811Z INFO  mpmcli - this process (5368) started by 'miktex-portable.exe' with command line: mpm --register-components --verbose
+2025-10-20 08:47:29,812Z INFO  mpmcli - Operating on the private (per-user) MiKTeX setup
+2025-10-20 08:47:29,921Z WARN  mpmcli.core - still open: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Miktex\texmfs/config\fontconfig\config\fonts.conf
+2025-10-20 08:47:29,921Z WARN  mpmcli.core - still open: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Miktex\texmfs\install\fontconfig\config\fonts.conf.in
+2025-10-20 08:47:29,921Z INFO  mpmcli - this process (5368) finishes with exit code 0
