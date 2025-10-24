@@ -1,0 +1,48 @@
+2025-10-23 00:49:48,602Z INFO  main - starting: MiKTeX Console 4.11 (MiKTeX 24.1 Portable)
+2025-10-23 00:49:48,628Z INFO  miktex-console.core - start process: pdftex --miktex-disable-installer --miktex-disable-maintenance --miktex-disable-diagnose --version
+2025-10-23 00:49:50,189Z ERROR miktex-console.core - Something is wrong with the PATH:
+2025-10-23 00:49:50,189Z ERROR miktex-console.core - C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python312\;C:\Users\user\AppData\Local\com.Langflow\uv;C:\Users\user\.local\bin;C:\Users\user\miniconda3;C:\Users\user\miniconda3\Library\mingw-w64\bin;C:\Users\user\miniconda3\Library\usr\bin;C:\Users\user\miniconda3\Library\bin;C:\Users\user\miniconda3\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\Python\Python313\Scripts
+2025-10-23 00:49:51,654Z WARN  miktex-console.packagemanager - dependency problem: showframe is required by _miktex-latex-packages
+2025-10-23 00:49:51,654Z WARN  miktex-console.packagemanager - dependency problem: thailatex is required by _miktex-latex-packages
+2025-10-23 00:49:51,656Z WARN  miktex-console.packagemanager - dependency problem: luxi is required by _miktex-fonts-type1
+2025-10-23 00:49:52,830Z INFO  miktex-console.core - start process: miktex fontmaps configure
+2025-10-23 00:50:42,895Z INFO  mainwindow - checking for updates...
+2025-10-23 00:50:42,905Z INFO  miktex-console.packagemanager - searching for updateable packages
+2025-10-23 00:50:42,912Z INFO  miktex-console.packagemanager - going to download https://api2.miktex.org/hello
+2025-10-23 00:50:43,606Z INFO  miktex-console.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2025-10-23 00:50:43,762Z INFO  mainwindow - downloading https://tw.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/miktex-zzdb3-2.9.tar.lzma...
+2025-10-23 00:50:43,950Z INFO  miktex-console.packagemanager - going to download https://tw.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/miktex-zzdb3-2.9.tar.lzma
+2025-10-23 00:50:48,832Z INFO  mainwindow - 1.89 MB, 3.10 Mbit/s
+2025-10-23 00:50:50,861Z INFO  mainwindow - updating package manifests (C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Miktex\texmfs\install\miktex/config\package-manifests.ini)...
+2025-10-23 00:50:52,281Z INFO  mainwindow - installed 8109 package manifests
+2025-10-23 00:50:52,281Z INFO  mainwindow - visiting repository https://tw.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/...
+2025-10-23 00:50:52,281Z INFO  mainwindow - repository type: remote package repository
+2025-10-23 00:50:52,283Z INFO  mainwindow - loading package repository manifest...
+2025-10-23 00:50:52,283Z INFO  mainwindow - downloading https://tw.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/miktex-zzdb1-2.9.tar.lzma...
+2025-10-23 00:50:52,283Z INFO  miktex-console.packagemanager - going to download https://tw.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/miktex-zzdb1-2.9.tar.lzma
+2025-10-23 00:50:54,431Z INFO  mainwindow - 0.40 MB, 1.48 Mbit/s
+2025-10-23 00:50:55,443Z WARN  miktex-console.packagemanager - dependency problem: showframe is required by _miktex-latex-packages
+2025-10-23 00:50:55,443Z WARN  miktex-console.packagemanager - dependency problem: thailatex is required by _miktex-latex-packages
+2025-10-23 00:50:55,444Z WARN  miktex-console.packagemanager - dependency problem: luxi is required by _miktex-fonts-type1
+2025-10-23 00:50:58,585Z INFO  mainwindow - package repository digest: 07d216472d9d0750319978209123ac5a
+2025-10-23 00:51:10,986Z INFO  miktex-console.packagemanager - ms: package is obsolete
+2025-10-23 00:51:10,987Z INFO  miktex-console.packagemanager - miktex-mpfr-bin-x64-2.9: package is obsolete
+2025-10-23 00:51:11,019Z INFO  mainwindow - found 123 updates
+2025-10-23 00:51:11,064Z INFO  miktex-console.core - start process: pdftex --miktex-disable-installer --miktex-disable-maintenance --miktex-disable-diagnose --version
+2025-10-23 00:51:11,611Z ERROR miktex-console.core - Something is wrong with the PATH:
+2025-10-23 00:51:11,611Z ERROR miktex-console.core - C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git LFS;C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python312\;C:\Users\user\AppData\Local\com.Langflow\uv;C:\Users\user\.local\bin;C:\Users\user\miniconda3;C:\Users\user\miniconda3\Library\mingw-w64\bin;C:\Users\user\miniconda3\Library\usr\bin;C:\Users\user\miniconda3\Library\bin;C:\Users\user\miniconda3\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\Python\Python313\Scripts
+2025-10-23 00:51:42,631Z INFO  mainwindow - checking for updates...
+2025-10-23 00:51:42,643Z INFO  miktex-console.packagemanager - searching for updateable packages
+2025-10-23 00:51:42,644Z INFO  miktex-console.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2025-10-23 00:51:53,839Z FATAL miktex-console.core - Couldn't resolve host name
+2025-10-23 00:51:53,840Z FATAL miktex-console.core - Data: code="6", url="https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true"
+2025-10-23 00:51:53,840Z FATAL miktex-console.core - Source: Libraries\MiKTeX\PackageManager\CurlWebSession.cpp:247
+2025-10-23 00:51:53,842Z ERROR mainwindow - Libraries\MiKTeX\PackageManager\CurlWebSession.cpp:247: Couldn't resolve host name(code="6", url="https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true")
+2025-10-23 00:52:52,899Z INFO  mainwindow - installing updates...
+2025-10-23 00:52:52,901Z INFO  miktex-console.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2025-10-23 00:52:52,904Z FATAL miktex-console.core - Couldn't resolve host name
+2025-10-23 00:52:52,904Z FATAL miktex-console.core - Data: code="6", url="https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true"
+2025-10-23 00:52:52,904Z FATAL miktex-console.core - Source: Libraries\MiKTeX\PackageManager\CurlWebSession.cpp:247
+2025-10-23 00:52:52,924Z ERROR mainwindow - Libraries\MiKTeX\PackageManager\CurlWebSession.cpp:247: Couldn't resolve host name(code="6", url="https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true")
+2025-10-23 00:53:03,351Z WARN  main - session.use_count() == 8
+2025-10-23 00:53:03,360Z INFO  main - finishing with exit code 0

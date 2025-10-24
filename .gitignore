@@ -1,0 +1,21 @@
+# PyInstaller builds (temporary)
+dist/
+build/
+*.spec
+
+# Python cache (temporary)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs (temporary)
+*.log
+
+# Truly temporary files
+*.tmp
+*.temp
+
+# System files
+Thumbs.db
+.DS_Store

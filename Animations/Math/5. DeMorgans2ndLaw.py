@@ -1,5 +1,8 @@
+# TITLE: De Morgan's 2nd Law: (A∩B)' = A'∪B'
+# DESCRIPTION: Visual proof demonstrating De Morgan's second law showing complement of intersection equals union of complements.
 from manim import *
 import numpy as np
+
 
 class DeMorgans2ndLaw(Scene):
     def construct(self):
@@ -12,7 +15,8 @@ class DeMorgans2ndLaw(Scene):
         self.camera.background_color = background_color
 
         # Title
-        main_title = Text("De Morgan's 2nd Law", font_size=48, color=BLUE).set_color_by_gradient(RED, BLUE)
+        main_title = Text("De Morgan's 2nd Law", font_size=48,
+                          color=BLUE).set_color_by_gradient(RED, BLUE)
         underline = Line(
             main_title.get_left() + DOWN * 0.3,
             main_title.get_right() + DOWN * 0.3,
@@ -21,7 +25,8 @@ class DeMorgans2ndLaw(Scene):
         title_group = VGroup(main_title, underline).to_edge(UP, buff=0.5)
 
         # Universal sets
-        universal_left = RoundedRectangle(height=4, width=4, corner_radius=0.2, color=WHITE, stroke_width=2).shift(LEFT * 3)
+        universal_left = RoundedRectangle(
+            height=4, width=4, corner_radius=0.2, color=WHITE, stroke_width=2).shift(LEFT * 3)
         universal_right = universal_left.copy().shift(RIGHT * 6)
 
         # Function to create labeled circles
@@ -41,11 +46,14 @@ class DeMorgans2ndLaw(Scene):
         right_B = create_circle_with_label(1.2, color_B, RIGHT*3.8, "B")
 
         # Labels
-        left_title0 = MathTex("(A \\cap B)", font_size=40, color=color_highlight)
-        left_title = MathTex("(A \\cap B)'", font_size=40, color=color_highlight)
+        left_title0 = MathTex("(A \\cap B)", font_size=40,
+                              color=color_highlight)
+        left_title = MathTex("(A \\cap B)'", font_size=40,
+                             color=color_highlight)
         right_title0 = MathTex("A'", font_size=40, color=color_highlight)
         right_title1 = MathTex("B'", font_size=40, color=color_highlight)
-        right_title = MathTex("A' \\cup B'", font_size=40, color=color_highlight)
+        right_title = MathTex("A' \\cup B'", font_size=40,
+                              color=color_highlight)
         equals = MathTex("=", font_size=80, color=RED).move_to(ORIGIN)
 
         left_title.next_to(universal_left, DOWN, buff=0.5)
@@ -59,40 +67,50 @@ class DeMorgans2ndLaw(Scene):
         self.play(Write(title_group), run_time=1.5)
 
         # Universal sets
-        self.play(Create(universal_left), Create(universal_right), run_time=1.5)
+        self.play(Create(universal_left), Create(
+            universal_right), run_time=1.5)
 
         # Sets
-        self.play(*[FadeIn(obj, scale=1.2) for obj in [left_A, left_B, right_A, right_B]], run_time=2)
+        self.play(*[FadeIn(obj, scale=1.2)
+                  for obj in [left_A, left_B, right_A, right_B]], run_time=2)
 
         # --- Left side (Intersection then complement) ---
-        intersection = Intersection(left_A[0], left_B[0], color=BLUE, fill_opacity=1)
-        complement_intersection = Difference(universal_left, intersection, color=GREEN, fill_opacity=0.8)
+        intersection = Intersection(
+            left_A[0], left_B[0], color=BLUE, fill_opacity=1)
+        complement_intersection = Difference(
+            universal_left, intersection, color=GREEN, fill_opacity=0.8)
 
         # Show intersection first
         self.play(FadeIn(intersection), Write(left_title0))
         self.wait(3)
 
         # Then complement of intersection
-        self.play(FadeIn(complement_intersection), FadeOut(intersection), FadeOut(left_title0))
+        self.play(FadeIn(complement_intersection), FadeOut(
+            intersection), FadeOut(left_title0))
         self.play(Write(left_title))
         self.wait(3)
 
         # --- Right side (Complements then union) ---
-        A_complement = Difference(universal_right, right_A[0], color=RED, fill_opacity=0.6)
-        B_complement = Difference(universal_right, right_B[0], color=BLUE, fill_opacity=0.7)
+        A_complement = Difference(
+            universal_right, right_A[0], color=RED, fill_opacity=0.6)
+        B_complement = Difference(
+            universal_right, right_B[0], color=BLUE, fill_opacity=0.7)
 
         # Show A'
         self.play(FadeIn(A_complement), Write(right_title0))
         self.wait(3)
 
         # Show B'
-        self.play(FadeIn(B_complement), ReplacementTransform(right_title0, right_title1))
+        self.play(FadeIn(B_complement), ReplacementTransform(
+            right_title0, right_title1))
         self.wait(3)
 
         # Union of complements
-        union_complements = Union(A_complement, B_complement, color=GREEN, fill_opacity=0.8)
+        union_complements = Union(
+            A_complement, B_complement, color=GREEN, fill_opacity=0.8)
         self.play(FadeIn(union_complements), FadeOut(right_title1))
-        self.play(Write(right_title), FadeOut(A_complement), FadeOut(B_complement))
+        self.play(Write(right_title), FadeOut(
+            A_complement), FadeOut(B_complement))
         self.wait(2)
 
         # Equality
@@ -100,6 +118,7 @@ class DeMorgans2ndLaw(Scene):
         self.wait(1)
 
         # Conclusion
-        conclusion = Text("De Morgan's second Law Verified!", font_size=36, color=color_highlight).to_edge(DOWN, buff=0.5)
+        conclusion = Text("De Morgan's second Law Verified!",
+                          font_size=36, color=color_highlight).to_edge(DOWN, buff=0.5)
         self.play(FadeIn(conclusion, shift=UP), run_time=1.5)
         self.wait(2)

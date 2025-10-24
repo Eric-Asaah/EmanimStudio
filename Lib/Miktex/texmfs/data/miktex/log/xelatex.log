@@ -1,0 +1,5 @@
+2025-10-24 09:50:04,526Z INFO  xelatex - this process (928) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64\xelatex.exe --version
+2025-10-24 09:50:04,526Z INFO  xelatex - running on Windows 10.0.26100
+2025-10-24 09:50:04,533Z INFO  xelatex - this is MiKTeX-XETEX 4.10.0 (0.999995) (MiKTeX 24.1 Portable)
+2025-10-24 09:50:04,562Z INFO  xelatex - allowing known shell commands
+2025-10-24 09:50:04,598Z INFO  xelatex - this process (928) finishes with exit code 0

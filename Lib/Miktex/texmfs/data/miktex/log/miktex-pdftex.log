@@ -1,0 +1,49 @@
+2025-10-24 09:50:34,084Z INFO  miktex-pdftex - this process (10868) started by miktex-makefmt in directory C:\Users\user\AppData\Local\Temp\mik51546 with command line: miktex-pdftex.exe --miktex-enable-installer --miktex-disable-maintenance --miktex-disable-diagnose --interaction=nonstopmode --initialize --halt-on-error --alias=pdflatex --job-name=pdflatex -tcx=cp227.tcx --enable-etex pdflatex.ini
+2025-10-24 09:50:34,084Z INFO  miktex-pdftex - running on Windows 10.0.26100
+2025-10-24 09:50:34,084Z INFO  miktex-pdftex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 09:50:34,087Z INFO  miktex-pdftex - allowing known shell commands
+2025-10-24 09:50:34,201Z INFO  miktex-pdftex - installing package l3kernel triggered by tex/latex/l3kernel\expl3.ltx
+2025-10-24 09:50:34,204Z INFO  miktex-pdftex.packagemanager - going to download https://api2.miktex.org/repositories?&releaseState=Stable&orderBy=ranking&take=1&onlySecure=true
+2025-10-24 09:50:34,884Z INFO  miktex-pdftex - mpm: starting package maintenance...
+2025-10-24 09:50:34,884Z INFO  miktex-pdftex - mpm: installation directory: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install
+2025-10-24 09:50:34,884Z INFO  miktex-pdftex - mpm: package repository: https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/
+2025-10-24 09:50:36,282Z WARN  miktex-pdftex.packagemanager - dependency problem: showframe is required by _miktex-latex-packages
+2025-10-24 09:50:36,282Z WARN  miktex-pdftex.packagemanager - dependency problem: thailatex is required by _miktex-latex-packages
+2025-10-24 09:50:36,285Z WARN  miktex-pdftex.packagemanager - dependency problem: luxi is required by _miktex-fonts-type1
+2025-10-24 09:50:36,887Z INFO  miktex-pdftex - mpm: package repository digest: 07d216472d9d0750319978209123ac5a
+2025-10-24 09:50:36,887Z INFO  miktex-pdftex - mpm: going to download 189165 bytes
+2025-10-24 09:50:36,887Z INFO  miktex-pdftex - mpm: going to install 24 file(s) (1 package(s))
+2025-10-24 09:50:38,033Z INFO  miktex-pdftex.packagemanager - installing package l3kernel
+2025-10-24 09:50:38,034Z INFO  miktex-pdftex - mpm: downloading https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/l3kernel.tar.lzma...
+2025-10-24 09:50:38,035Z INFO  miktex-pdftex.packagemanager - going to download https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/l3kernel.tar.lzma
+2025-10-24 09:50:41,843Z INFO  miktex-pdftex - mpm: 0.19 MB, 0.40 Mbit/s
+2025-10-24 09:50:41,884Z INFO  miktex-pdftex - mpm: extracting files from l3kernel.tar.lzma...
+2025-10-24 09:50:42,885Z INFO  miktex-pdftex.core - start process: miktex fontmaps configure
+2025-10-24 09:51:02,875Z INFO  miktex-pdftex - installing package atveryend triggered by tex/latex/atveryend\atveryend.sty
+2025-10-24 09:51:02,877Z INFO  miktex-pdftex.packagemanager - going to download https://api2.miktex.org/repositories/3ab7ef00e5a6488218069c4108072c4b
+2025-10-24 09:51:03,475Z INFO  miktex-pdftex - mpm: starting package maintenance...
+2025-10-24 09:51:03,475Z INFO  miktex-pdftex - mpm: installation directory: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install
+2025-10-24 09:51:03,475Z INFO  miktex-pdftex - mpm: package repository: https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/
+2025-10-24 09:51:04,237Z INFO  miktex-pdftex - mpm: package repository digest: 07d216472d9d0750319978209123ac5a
+2025-10-24 09:51:04,237Z INFO  miktex-pdftex - mpm: going to download 1386 bytes
+2025-10-24 09:51:04,238Z INFO  miktex-pdftex - mpm: going to install 2 file(s) (1 package(s))
+2025-10-24 09:51:06,005Z INFO  miktex-pdftex.packagemanager - installing package atveryend
+2025-10-24 09:51:06,007Z INFO  miktex-pdftex - mpm: downloading https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/atveryend.tar.lzma...
+2025-10-24 09:51:06,007Z INFO  miktex-pdftex.packagemanager - going to download https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/atveryend.tar.lzma
+2025-10-24 09:51:07,340Z INFO  miktex-pdftex - mpm: 0.00 MB, 0.01 Mbit/s
+2025-10-24 09:51:07,378Z INFO  miktex-pdftex - mpm: extracting files from atveryend.tar.lzma...
+2025-10-24 09:51:09,004Z INFO  miktex-pdftex.core - start process: miktex fontmaps configure
+2025-10-24 09:51:17,572Z INFO  miktex-pdftex - installing package latex-firstaid triggered by tex/latex/firstaid\latex2e-first-aid-for-external-files.ltx
+2025-10-24 09:51:17,572Z INFO  miktex-pdftex - mpm: starting package maintenance...
+2025-10-24 09:51:17,572Z INFO  miktex-pdftex - mpm: installation directory: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install
+2025-10-24 09:51:17,572Z INFO  miktex-pdftex - mpm: package repository: https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/
+2025-10-24 09:51:18,116Z INFO  miktex-pdftex - mpm: package repository digest: 07d216472d9d0750319978209123ac5a
+2025-10-24 09:51:18,116Z INFO  miktex-pdftex - mpm: going to download 4755 bytes
+2025-10-24 09:51:18,116Z INFO  miktex-pdftex - mpm: going to install 4 file(s) (1 package(s))
+2025-10-24 09:51:19,469Z INFO  miktex-pdftex.packagemanager - installing package latex-firstaid
+2025-10-24 09:51:19,470Z INFO  miktex-pdftex - mpm: downloading https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/latex-firstaid.tar.lzma...
+2025-10-24 09:51:19,471Z INFO  miktex-pdftex.packagemanager - going to download https://kr.mirrors.cicku.me/ctan/systems/win32/miktex/tm/packages/latex-firstaid.tar.lzma
+2025-10-24 09:51:20,488Z INFO  miktex-pdftex - mpm: 0.00 MB, 0.04 Mbit/s
+2025-10-24 09:51:20,524Z INFO  miktex-pdftex - mpm: extracting files from latex-firstaid.tar.lzma...
+2025-10-24 09:51:21,591Z INFO  miktex-pdftex.core - start process: miktex fontmaps configure
+2025-10-24 09:51:23,570Z INFO  miktex-pdftex - this process (10868) finishes with exit code 0

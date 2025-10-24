@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-23T18:25:03.666968",
+  "studio_root": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio",
+  "issues_found": [
+    "Missing folder: Diagnostics/repair_logs",
+    "No enhanced backups available",
+    "Enhanced backup tools not available"
+  ],
+  "issues_fixed": [
+    "Created folder: Diagnostics/repair_logs",
+    "Created test_manim.bat helper"
+  ],
+  "status": "NEEDS_ATTENTION"
+}

@@ -1,0 +1,27 @@
+EMANIM STUDIO - END USER LICENSE AGREEMENT
+
+Copyright © 2025 Eric Asaah. All rights reserved.
+
+LICENSE GRANT:
+Eric Asaah grants you a limited, non-exclusive license to use 
+Emanim Studio for personal and educational purposes.
+
+COMMERCIAL USE:
+For commercial use, teaching, content creation, or business purposes,
+please purchase a commercial license.
+
+RESTRICTIONS:
+You may NOT:
+- Redistribute, resell, or sublicense this software
+- Use for commercial purposes without a paid license
+- Reverse engineer or modify the software
+- Remove copyright notices
+
+DISCLAIMER:
+This software is provided "as is" without warranties. 
+The author is not liable for any damages arising from its use.
+
+By installing Emanim Studio, you agree to these terms.
+
+For commercial licensing: emaphyconnect@gmail.com
+Created by Eric Asaah - (Emanim Proect) under Emaphy

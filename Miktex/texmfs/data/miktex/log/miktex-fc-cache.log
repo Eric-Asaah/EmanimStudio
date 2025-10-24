@@ -1,3 +1,0 @@
-2025-10-20 08:47:47,564Z INFO  miktex-fc-cache - this process (21216) started by miktex in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: miktex-fc-cache --verbose --miktex-disable-maintenance --miktex-disable-diagnose
-2025-10-20 08:47:47,565Z INFO  miktex-fc-cache - running on Windows 10.0.26100
-2025-10-20 08:48:00,378Z INFO  miktex-fc-cache - this process (21216) finishes with exit code 0

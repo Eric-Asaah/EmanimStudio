@@ -1,150 +1,175 @@
-"""
-Simple video player for EmanimStudio
-Handles video playback operations with portable paths
-"""
+# Scripts\video_player.py
 import os
 import subprocess
+import time
 from pathlib import Path
+import glob
+
 
 class VideoPlayer:
-    def __init__(self, root_dir=None):
-        # Auto-detect root directory if not provided
-        if root_dir is None:
-            self.root_dir = self.find_studio_root()
-        else:
-            self.root_dir = Path(root_dir)
-        
-        print(f"🎥 Video Player initialized at: {self.root_dir}")
-    
-    def find_studio_root(self):
-        """Automatically find the EmanimStudio root directory"""
-        # Method 1: Check if running from Scripts folder
-        current_file = Path(__file__).resolve()
-        if current_file.parent.name == "Scripts":
-            return current_file.parent.parent
-        
-        # Method 2: Check if running from root
-        if (current_file.parent / "EmanimStudio.bat").exists():
-            return current_file.parent
-        
-        # Method 3: Current directory
-        return Path.cwd()
-    
-    def play_video(self, video_path):
-        """Play a video file using system default player"""
-        try:
-            # Handle both relative and absolute paths
-            if Path(video_path).is_absolute():
-                full_path = Path(video_path)
-            else:
-                full_path = self.root_dir / video_path
-            
-            if not full_path.exists():
-                return {
-                    "status": "error", 
-                    "message": f"Video file not found: {video_path}",
-                    "searched_path": str(full_path)
-                }
-            
-            print(f"🎥 Playing video: {full_path.name}")
-            
-            # Use system default player
-            if os.name == 'nt':  # Windows
-                os.startfile(str(full_path))
-                return {
-                    "status": "success", 
-                    "message": f"Playing {full_path.name}",
-                    "video_path": str(full_path)
-                }
-            else:
-                return {
-                    "status": "error", 
-                    "message": "Video playback only supported on Windows",
-                    "suggestion": "Manually open the video file from Output folder"
-                }
-            
-        except Exception as e:
-            return {
-                "status": "error", 
-                "message": f"Failed to play video: {str(e)}",
-                "exception_type": type(e).__name__
-            }
-    
-    def find_latest_video(self):
-        """Find the most recently created video file in Output folder"""
-        output_dir = self.root_dir / "Output"
-        
-        if not output_dir.exists():
-            return None
-        
-        try:
-            # Find all MP4 files and get the most recent one
-            video_files = list(output_dir.glob("**/*.mp4"))
-            if not video_files:
-                return None
-            
-            # Sort by modification time, most recent first
-            latest_video = max(video_files, key=lambda f: f.stat().st_mtime)
-            return latest_video
-            
-        except Exception as e:
-            print(f"❌ Error finding latest video: {e}")
-            return None
-    
-    def play_latest_video(self):
-        """Play the most recently created video"""
-        latest_video = self.find_latest_video()
-        
+    """
+    Robust video player that NEVER plays old cached videos
+    Always finds and plays the most recently created video
+    """
+
+    def __init__(self, project_root=None):
+        self.project_root = project_root or Path(__file__).parent.parent
+        self.output_dir = self.project_root / "Output"
+
+    def play_latest_video(self, scene_name=None):
+        """
+        Find and play the MOST RECENT video file
+        Completely ignores Manim's cache and always finds fresh renders
+        """
+        print("🎬 Searching for latest video...")
+
+        # Method 1: Look in Output directory first (new system)
+        latest_video = self._find_newest_file(self.output_dir, "*.mp4")
+
+        # Method 2: Look in Manim's video directory (backup)
+        if not latest_video:
+            manim_videos = self.project_root / "media" / "videos"
+            latest_video = self._find_newest_file(manim_videos, "*.mp4")
+
+        # Method 3: Search entire project for any MP4
+        if not latest_video:
+            latest_video = self._find_newest_file(self.project_root, "*.mp4")
+
         if latest_video:
-            # Convert to relative path for playback
-            relative_path = latest_video.relative_to(self.root_dir)
-            return self.play_video(str(relative_path))
+            print(f"✅ Found: {latest_video.name}")
+            print(f"📍 Path: {latest_video}")
+            print(f"🕒 Modified: {time.ctime(latest_video.stat().st_mtime)}")
+
+            # Play the video
+            return self._play_video(latest_video)
         else:
-            return {
-                "status": "error", 
-                "message": "No video files found in Output folder",
-                "suggestion": "Render an animation first"
-            }
-    
-    def list_videos(self):
-        """List all available video files"""
-        output_dir = self.root_dir / "Output"
-        videos = []
-        
-        if output_dir.exists():
-            for video_file in output_dir.glob("**/*.mp4"):
-                if video_file.is_file():
-                    stat = video_file.stat()
-                    videos.append({
-                        "filename": video_file.name,
-                        "path": str(video_file.relative_to(self.root_dir)),
-                        "size": stat.st_size,
-                        "modified": stat.st_mtime,
-                        "full_path": str(video_file)
-                    })
-        
-        # Sort by modification time, newest first
-        videos.sort(key=lambda x: x["modified"], reverse=True)
-        return videos
+            print("❌ No video files found!")
+            return False
 
-# Test function
-def test_video_player():
-    """Test the video player system"""
+    def play_specific_video(self, video_path):
+        """Play a specific video file"""
+        video_file = Path(video_path)
+
+        if video_file.exists():
+            print(f"🎬 Playing: {video_file.name}")
+            return self._play_video(video_file)
+        else:
+            print(f"❌ Video not found: {video_path}")
+            return False
+
+    def _find_newest_file(self, directory, pattern):
+        """Find the newest file matching pattern in directory"""
+        if not directory.exists():
+            return None
+
+        # Get all matching files with their modification times
+        files = []
+        for file_path in directory.rglob(pattern):
+            if file_path.is_file():
+                files.append((file_path.stat().st_mtime, file_path))
+
+        if files:
+            # Sort by modification time (newest first)
+            files.sort(reverse=True)
+            return files[0][1]  # Return newest file
+
+        return None
+
+    def _play_video(self, video_path):
+        """Actually play the video file"""
+        try:
+            # Method 1: Use os.startfile (most reliable on Windows)
+            os.startfile(video_path)
+            print(f"▶️  Playing: {video_path.name}")
+            return True
+
+        except Exception as e:
+            print(f"❌ Could not play video: {e}")
+            return False
+
+    def clear_video_cache(self):
+        """Clear ALL video cache to ensure fresh renders"""
+        cache_dirs = [
+            self.project_root / "Output" / "cache",
+            self.project_root / "media",
+            self.project_root / "Output" / "videos"  # Manim's output
+        ]
+
+        print("🧹 Clearing video cache...")
+        for cache_dir in cache_dirs:
+            if cache_dir.exists():
+                try:
+                    # Remove all MP4 files in cache
+                    for mp4_file in cache_dir.rglob("*.mp4"):
+                        try:
+                            mp4_file.unlink()
+                            print(f"   Deleted: {mp4_file}")
+                        except:
+                            pass
+
+                    # Remove the cache directory itself
+                    import shutil
+                    shutil.rmtree(cache_dir)
+                    print(f"   Removed: {cache_dir}")
+                except Exception as e:
+                    print(f"   ⚠️  Could not clear {cache_dir}: {e}")
+
+    def list_all_videos(self):
+        """List all video files in project for debugging"""
+        print("\n📁 All video files in project:")
+
+        video_files = []
+        for mp4_file in self.project_root.rglob("*.mp4"):
+            video_files.append((
+                mp4_file.stat().st_mtime,
+                mp4_file
+            ))
+
+        # Sort by modification time (newest first)
+        video_files.sort(reverse=True)
+
+        for mtime, video_file in video_files[:10]:  # Show 10 newest
+            print(f"   🕒 {time.ctime(mtime)} - {video_file}")
+
+        return [vf[1] for vf in video_files]
+
+
+# Simple function for your batch files
+def play_latest_video():
+    """One-line function to always play the newest video"""
     player = VideoPlayer()
-    print("✅ Video Player Ready")
-    print(f"📁 Root: {player.root_dir}")
-    
-    # List available videos
-    videos = player.list_videos()
-    print(f"🎥 Found {len(videos)} video files:")
-    
-    for video in videos[:3]:  # Show first 3
-        print(f"   - {video['filename']} ({video['size']} bytes)")
-    
-    if videos:
-        print("🎯 Latest video ready to play!")
-    else:
-        print("💡 No videos found. Render an animation first!")
+    player.clear_video_cache()  # Always clear cache first
+    return player.play_latest_video()
 
-if __name__ == "__main__":
-    test_video_player()
+
+def play_fresh_render(scene_file, scene_class):
+    """
+    Render and immediately play FRESH video (no cache)
+    """
+    player = VideoPlayer()
+
+    # Clear cache first
+    player.clear_video_cache()
+
+    # Render with NO CACHE
+    print(f"🎬 Fresh render: {scene_class}")
+    cmd = [
+        "manim", "-ql", "--disable_caching",
+        str(scene_file), scene_class
+    ]
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True,
+                                cwd=player.project_root, timeout=120)
+
+        if result.returncode == 0:
+            print("✅ Render completed")
+            # Play the newest video
+            return player.play_latest_video()
+        else:
+            print(f"❌ Render failed: {result.stderr}")
+            return False
+
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        return False

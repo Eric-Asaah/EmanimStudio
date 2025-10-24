@@ -1,4 +1,7 @@
+# TITLE: Shape Animation: Box to Triangle
+# DESCRIPTION: Simple geometric animation showing box movement and transformation to triangle on coordinate plane.
 from manim import *
+
 
 class Box(Scene):
     def construct(self):
@@ -15,9 +18,9 @@ class Box(Scene):
         # Create the box with enhanced styling
         box = Rectangle(
             stroke_color=GREEN_C,
-            stroke_opacity=0.7, 
+            stroke_opacity=0.7,
             fill_color=RED_B,
-            fill_opacity=0.5, 
+            fill_opacity=0.5,
             width=1,
             height=1
         ).move_to(ORIGIN)
@@ -33,12 +36,12 @@ class Box(Scene):
         # Simplified animations
         self.play(Create(box))
         self.wait(0.5)
-        
+
         # Box animations with shorter duration
         self.play(box.animate.shift(RIGHT*2), run_time=1)
         self.play(box.animate.shift(UP*2), run_time=1)
-        
+
         # Transform box to triangle
         self.play(Transform(box.copy(), triangle), run_time=1.5)
-        
+
         self.wait(1)

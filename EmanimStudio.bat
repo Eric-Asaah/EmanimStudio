@@ -1,179 +1,341 @@
+@ECHO OFF
 @echo off
 chcp 65001 >nul
-title EmanimStudio - Portable Animation Studio
+title EmanimStudio - Launch Portal
+mode con: cols=100 lines=35
 
-:MAIN_MENU
+:: =============================================
+:: EMANIMSTUDIO ENVIRONMENT CONFIGURATION
+:: =============================================
+set "STUDIO_ROOT=%~dp0"
+set "PYTHON_HOME=%STUDIO_ROOT%Lib\python312"
+set "PYTHONPATH=%STUDIO_ROOT%Lib\site-packages"
+set "PATH=%PYTHON_HOME%;%STUDIO_ROOT%Lib\ffmpeg-8.0-essentials_build\bin;%PATH%"
+
+:MAIN_LAUNCHER
+cls
+color 09
+echo.
+echo       ███████╗███╗   ███╗ █████╗ ███╗   ██╗██╗███╗   ███╗
+echo       ██╔════╝████╗ ████║██╔══██╗████╗  ██║██║████╗ ████║
+echo       █████╗  ██╔████╔██║███████║██╔██╗ ██║██║██╔████╔██║
+echo       ██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║██║██║╚██╔╝██║
+echo       ███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║██║██║ ╚═╝ ██║
+echo       ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝
+color 0C
+echo                              ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗ 
+echo                              ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+echo                              ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+echo                              ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+echo                              ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+echo                              ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
+color 0A
+echo.
+echo                    ========================================================
+echo                                MATHEMATICAL ANIMATION STUDIO
+echo                    ========================================================
+echo.
+echo                             EMANIMSTUDIO IS A PRODUCT OF EMAPHY
+echo                          A comprehensive learning platform by Eric Asaah
+echo.
+color 09
+echo                               [1] 🚀 LAUNCH TERMINAL INTERFACE
+echo                               [2] 🎨 PREVIEW GRAPHICAL INTERFACE
+echo                               [3] 🔧 SYSTEM DIAGNOSTICS
+echo                               [4] 💾 BACKUP MANAGER
+echo                               [5] 🛠️  AUTO-REPAIR
+echo                               [6] ℹ️  SYSTEM INFORMATION
+echo                               [7] 📖 VIEW README
+echo                               [8] 🚪 EXIT
+echo.
+set /p "CHOICE=                              Select an option [1-8]: "
+
+if "%CHOICE%"=="1" goto LAUNCH_TERMINAL
+if "%CHOICE%"=="2" goto PREVIEW_GUI
+if "%CHOICE%"=="3" goto RUN_DIAGNOSTICS
+if "%CHOICE%"=="4" goto BACKUP_MANAGER
+if "%CHOICE%"=="5" goto AUTO_REPAIR
+if "%CHOICE%"=="6" goto SYSTEM_INFO
+if "%CHOICE%"=="7" goto VIEW_README
+if "%CHOICE%"=="8" goto EXIT
+
+:VIEW_README
+cls
+if exist "README.txt" (
+    type "README.txt"
+    echo.
+    echo Press any key to return to main menu...
+    pause >nul
+) else (
+    echo README file not found!
+    echo Please ensure README.txt is in the same folder as EmanimStudio.exe
+    echo.
+    pause
+)
+goto MAIN_LAUNCHER
+
+:LAUNCH_TERMINAL
+cls
+color 09
+echo.
+echo       ========================================================
+echo                    LAUNCHING TERMINAL INTERFACE
+echo       ========================================================
+echo.
+
+REM Change to script directory first
+cd /d "%~dp0"
+
+REM Check if terminal batch file exists
+if not exist "emanim_terminal.bat" (
+    echo                  ERROR: emanim_terminal.bat not found!
+    echo                  Current directory: %CD%
+    echo.
+    echo                  Please ensure all EmanimStudio files are together.
+    echo.
+    echo                  Press any key to return...
+    pause >nul
+    goto MAIN_LAUNCHER
+)
+
+echo                  Starting the powerful terminal interface...
+echo              This gives you complete control over animation creation!
+echo.
+echo                  Features:
+echo                  • Browse tons of pre-built animations
+echo                  • Real-time rendering
+echo                  • Quality settings from 480p to 4K
+echo                  • Batch rendering capabilities
+echo.
+timeout /t 2 /nobreak >nul
+
+REM Launch the terminal interface
+call "emanim_terminal.bat"
+
+goto MAIN_LAUNCHER
+:PREVIEW_GUI
+cls
+color 0B
+echo.
+echo        ███████╗███╗   ███╗ █████╗ ███╗   ██╗██╗███╗   ███╗
+echo        ██╔════╝████╗ ████║██╔══██╗████╗  ██║██║████╗ ████║
+echo        █████╗  ██╔████╔██║███████║██╔██╗ ██║██║██╔████╔██║
+echo        ██╔══╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║██║██║╚██╔╝██║
+echo        ███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║██║██║ ╚═╝ ██║
+echo        ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝
+
+
+echo                        ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗ 
+echo                        ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+echo                        ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+echo                        ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+echo                        ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+echo                        ╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
+
+echo.
+echo                        ██████╗ ██╗   ██╗██╗
+echo                        ██╔════╝ ██║   ██║██║
+echo                        ██║  ███╗██║   ██║██║
+echo                        ██║   ██║██║   ██║██║
+echo                        ╚██████╔╝╚██████╔╝██║
+echo                         ╚═════╝  ╚═════╝ ╚═╝
+
+echo.
+echo                    ========================================================
+echo                           EMANIMSTUDIO GUI - COMING SOON!
+echo                    ========================================================
+echo.
+
+echo             We're developing an enhanced visual interface to streamline
+echo             your animation workflow with practical features:
+echo.
+
+echo             🖼️  DIRECT PREVIEW WINDOW
+echo                View rendered animations immediately after completion
+echo                Eliminates manual file browsing for quick review
+echo.
+echo             📂 ORGANIZED LIBRARY BROWSING
+echo                Access tons of animations through categorized navigation
+echo                Structured filtering by mathematical topics
+echo.
+echo             🎯 SIMPLIFIED RENDER WORKFLOW
+echo                Visual progress indicators during animation processing
+echo                Quality presets with clear resolution options
+echo.
+echo             🎨 OPTIMIZED INTERFACE DESIGN
+echo                Clean layout with intuitive control placement
+echo                Efficient navigation for mathematical content creation
+echo.
+
+echo.
+echo             PLANNED ENHANCEMENTS:
+echo             🎬 EXTENDED VIDEO COMPOSITING TOOLS
+echo             📊 STREAMLINED ANIMATION WORKFLOWS  
+echo             🔧 ADVANCED CONTENT CREATION FEATURES
+echo.
+
+echo             EmanimStudio - Product of Emaphy Platform
+echo             Created by Eric Asaah
+echo.
+
+echo.
+echo             Evolving mathematical animation creation...
+echo.
+set /p "RETURN=             Press [T] for Terminal or [B] to go back: "
+
+if /i "%RETURN%"=="T" goto LAUNCH_TERMINAL
+if /i "%RETURN%"=="B" goto MAIN_LAUNCHER
+goto PREVIEW_GUI
+
+:RUN_DIAGNOSTICS
 cls
 echo.
-echo ==========================================
-echo      🎬 WELCOME TO EMANIM STUDIO!
-echo ==========================================
+echo       ========================================================
+echo                       RUNNING SYSTEM DIAGNOSTICS
+echo       ========================================================
 echo.
-echo 👋 Hello there! Don't worry about this terminal window.
-echo    It's just text commands: you're in complete control!
+echo                  Checking system health and components...
+echo                  This ensures everything is ready for animation creation!
 echo.
-echo 💡 Think of this as a friendly menu system.
-echo    We'll guide you through every step. 😊
-echo.
-echo 🚀 What would you like to do?
-echo.
-echo 1. 🎥 Create and Render Animation
-echo 2. 🔧 Run System Diagnostics
-echo 3. 📁 Open Animations Folder
-echo 4. 🎥 Open Output Videos Folder
-echo 5. 📺 Play Latest Video
-echo 6. 🛠️ Fix Python Environment
-echo 7. 🎨 Try Graphical Interface (Coming soon)
-echo 8. ❓ Help and Instructions
-echo 9. ❌ Exit
-echo.
-set /p CHOICE="Please enter your choice [1-9]: "
+timeout /t 2 /nobreak >nul
 
-if "%CHOICE%"=="1" goto CREATE_ANIMATION
-if "%CHOICE%"=="2" goto DIAGNOSTICS
-if "%CHOICE%"=="3" goto OPEN_ANIMATIONS
-if "%CHOICE%"=="4" goto OPEN_OUTPUT
-if "%CHOICE%"=="5" goto PLAY_VIDEO
-if "%CHOICE%"=="6" goto FIX_ENVIRONMENT
-if "%CHOICE%"=="7" goto GUI_INTERFACE
-if "%CHOICE%"=="8" goto HELP
-if "%CHOICE%"=="9" goto EXIT
+if exist "Diagnostics\diagnostics.py" (
+    python Diagnostics\diagnostics.py
+) else (
+    echo                  Diagnostics tool not found. Using basic check...
+    echo.
+    python --version
+    echo.
+    if exist "Lib\python312\python.exe" (
+        echo                  ✓ Python: OK
+    )
+    if exist "Lib\site-packages\manim" (
+        echo                  ✓ Manim: OK
+    )
+    if exist "Lib\ffmpeg-8.0-essentials_build" (
+        echo                  ✓ FFmpeg: OK
+    )
+)
 
 echo.
-echo ❌ Invalid choice! Please enter 1-9.
-echo.
-pause
-goto MAIN_MENU
+echo                  Press any key to return to main launcher...
+pause >nul
+goto MAIN_LAUNCHER
 
-:CREATE_ANIMATION
+:BACKUP_MANAGER
 cls
+color 09
 echo.
-echo ==========================================
-echo         🎥 CREATE ANIMATION
-echo ==========================================
+echo       ========================================================
+echo                          BACKUP MANAGEMENT
+echo       ========================================================
 echo.
-echo 📝 Let's create an animation step by step!
+echo                  Managing your animation projects and system configuration...
 echo.
-echo 🔍 First, let me check what animation categories you have...
-echo.
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); categories = backend.get_categories(); print(f'Found {len(categories)} categories:'); [print(f'   {i+1}. {cat['display_name']} ({cat['animation_count']} animations)') for i, cat in enumerate(categories)]"
-echo.
-set /p CAT_CHOICE="Choose a category [1-4]: "
+timeout /t 2 /nobreak >nul
 
-if "%CAT_CHOICE%"=="1" set CATEGORY=Math
-if "%CAT_CHOICE%"=="2" set CATEGORY=Physics
-if "%CAT_CHOICE%"=="3" set CATEGORY=Emanim
-if "%CAT_CHOICE%"=="4" set CATEGORY=Miscellaneous
-
-echo.
-echo 📂 Checking animations in %CATEGORY%...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); anims = backend.get_animations('%CATEGORY%'); print(f'Found {len(anims)} animations:'); [print(f'   {i+1}. {anim['title']}') for i, anim in enumerate(anims)]"
-echo.
-set /p ANIM_CHOICE="Choose animation [number] or 'b' to go back: "
-
-if /i "%ANIM_CHOICE%"=="b" goto MAIN_MENU
+if exist "Diagnostics\backup_manager.py" (
+    python Diagnostics\backup_manager.py --list
+) else (
+    echo                  Backup manager not found.
+    echo.
+    echo                  Your animations are stored in: %CD%\Animations
+    echo                  Rendered videos are in: %CD%\Output
+    echo.
+    echo                  To backup, simply copy the entire EmanimStudio folder!
+)
 
 echo.
-echo 🎬 Rendering animation...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); anims = backend.get_animations('%CATEGORY%'); import os; os.system(''); result = backend.render_animation('%CATEGORY%', anims[int('%ANIM_CHOICE%')-1]['filename']); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
+echo                  Press any key to return to main launcher...
+pause >nul
+goto MAIN_LAUNCHER
 
-:DIAGNOSTICS
+:AUTO_REPAIR
 cls
+color 09
 echo.
-echo ==========================================
-echo         🔧 SYSTEM DIAGNOSTICS
-echo ==========================================
+echo       ========================================================
+echo                          SYSTEM AUTO-REPAIR
+echo       ========================================================
 echo.
-echo 🔍 Checking your system health...
-echo 💡 This will make sure everything is working properly.
+echo                  Scanning for issues and applying fixes...
+echo                  Your system will be optimized for animation rendering!
 echo.
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.run_diagnostics(); print('Diagnostics complete!')"
-echo.
-echo 📊 Diagnostics complete! Your system should be ready.
-echo.
-pause
-goto MAIN_MENU
+timeout /t 2 /nobreak >nul
 
-:OPEN_ANIMATIONS
-echo.
-echo 📁 Opening Animations folder...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.open_animations_folder(); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
+if exist "Diagnostics\auto_repair.py" (
+    python Diagnostics\auto_repair.py
+) else (
+    echo                  Auto-repair tool not found. Running manual checks...
+    echo.
+    
+    REM Check critical folders
+    if not exist "Animations" (
+        mkdir "Animations"
+        echo                  ✓ Created Animations folder
+    )
+    if not exist "Output" (
+        mkdir "Output"
+        echo                  ✓ Created Output folder
+    )
+    if not exist "Animations\Math" mkdir "Animations\Math"
+    if not exist "Animations\Physics" mkdir "Animations\Physics"
+    if not exist "Animations\Emaphy" mkdir "Animations\Emaphy"
+    if not exist "Animations\Miscellaneous" mkdir "Animations\Miscellaneous"
+    
+    echo                  ✓ Basic structure verified
+)
 
-:OPEN_OUTPUT
 echo.
-echo 🎥 Opening Output Videos folder...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.open_output_folder(); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
+echo                  Press any key to return to main launcher...
+pause >nul
+goto MAIN_LAUNCHER
 
-:PLAY_VIDEO
-echo.
-echo 📺 Playing latest video...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.play_latest_video(); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
-
-:FIX_ENVIRONMENT
-echo.
-echo 🛠️ Fixing Python environment...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.fix_environment(); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
-
-:GUI_INTERFACE
-echo.
-echo 🎨 Launching Graphical Interface...
-python -c "import sys; sys.path.append('Scripts'); from core.backend import get_backend; backend = get_backend(); result = backend.launch_gui_placeholder(); print(result['message'])"
-echo.
-pause
-goto MAIN_MENU
-
-:HELP
+:SYSTEM_INFO
 cls
+color 09
 echo.
-echo ==========================================
-echo         ❓ HELP & INSTRUCTIONS
-echo ==========================================
+echo       ========================================================
+echo                          SYSTEM INFORMATION
+echo       ========================================================
 echo.
-echo 🎯 HOW TO USE EMANIM STUDIO:
+echo                  EmanimStudio v2.0 - Professional Animation Suite
+echo                  Owned by Emaphy - Created by Eric Asaah
 echo.
-echo 1. Add your animation .py files to the Animations folder
-echo 2. Use the categories: Math, Physics, Emanim, Miscellaneous
-echo 3. Run diagnostics first to check everything works
-echo 4. Your rendered videos will appear in Output folder
+echo                  Features:
+echo                  • 65+ Pre-built Mathematical Animations
+echo                  • Portable - No Installation Required
+echo                  • Self-Healing Diagnostics System
+echo                  • Professional Video Rendering Pipeline
 echo.
-echo 💡 TIPS:
-echo - Don't panic about the terminal - it's just text!
-echo - Everything is self-contained in this folder
-echo - No internet required after download
-echo - Can run from USB drives
+echo                  Components:
+echo                  • Manim Community Edition - Animation Engine
+echo                  • FFmpeg - Video Processing
+echo                  • MikTeX - Mathematical Typesetting
+echo                  • Python 3.12 - Runtime Environment
 echo.
-echo 🆘 TROUBLESHOOTING:
-echo - Run Diagnostics if something doesn't work
-echo - Use Fix Environment for Python issues
-echo - Check Animations folder for your files
+echo                  Ready for: Mathematical Visualizations, Educational Content,
+echo                  Scientific Presentations, and Creative Animations!
 echo.
-echo 🎨 GRAPHICAL INTERFACE:
-echo - Currently in development
-echo - Use 'Try Graphical Interface' for a preview
-echo - Terminal is fully functional in the meantime
+echo                  Installation Path: %CD%
 echo.
-pause
-goto MAIN_MENU
+echo.
+echo                  Press any key to return to main launcher...
+pause >nul
+goto MAIN_LAUNCHER
 
 :EXIT
+cls
+color 0C
 echo.
-echo 👋 Thank you for using EmanimStudio!
-echo 🎬 Happy animating!
+echo       ========================================================
+echo                         THANK YOU FOR USING
+echo                           EMANIM STUDIO 1.0
+echo       ========================================================
 echo.
-timeout /t 2 >nul
+echo                  Create amazing mathematical animations!
+color 0A
+echo                  Brought to you by Emaphy - Eric Asaah
+echo.
+timeout /t 3 /nobreak >nul
 exit

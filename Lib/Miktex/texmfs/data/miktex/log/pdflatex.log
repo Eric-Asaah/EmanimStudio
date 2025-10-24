@@ -1,0 +1,31 @@
+2025-10-23 18:21:01,360Z INFO  pdflatex - this process (5192) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe --version
+2025-10-23 18:21:01,360Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-23 18:21:01,363Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-23 18:21:01,398Z INFO  pdflatex - allowing known shell commands
+2025-10-23 18:21:01,411Z INFO  pdflatex - this process (5192) finishes with exit code 0
+2025-10-24 09:50:02,244Z INFO  pdflatex - this process (21528) started by powershell_ise in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe --version
+2025-10-24 09:50:02,245Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-24 09:50:02,247Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 09:50:02,272Z INFO  pdflatex - allowing known shell commands
+2025-10-24 09:50:02,291Z INFO  pdflatex - this process (21528) finishes with exit code 0
+2025-10-24 09:50:02,941Z INFO  pdflatex - this process (23640) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe --version
+2025-10-24 09:50:02,942Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-24 09:50:02,947Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 09:50:02,952Z INFO  pdflatex - allowing known shell commands
+2025-10-24 09:50:02,986Z INFO  pdflatex - this process (23640) finishes with exit code 0
+2025-10-24 09:50:05,431Z INFO  pdflatex - this process (22316) started by python in directory C:\Users\user\AppData\Local\Temp with command line: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe -interaction=nonstopmode C:\Users\user\AppData\Local\Temp\tmphgfrzx7s.tex
+2025-10-24 09:50:05,431Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-24 09:50:05,434Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 09:50:05,438Z INFO  pdflatex - allowing known shell commands
+2025-10-24 09:50:05,502Z INFO  pdflatex - going to create file: pdflatex.fmt
+2025-10-24 09:50:05,502Z INFO  pdflatex.core - start process: miktex --enable-installer formats build pdflatex --engine pdftex
+2025-10-24 10:20:25,967Z INFO  pdflatex - this process (13680) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: Lib\Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe --version
+2025-10-24 10:20:25,968Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-24 10:20:25,971Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 10:20:25,977Z INFO  pdflatex - allowing known shell commands
+2025-10-24 10:20:25,998Z INFO  pdflatex - this process (13680) finishes with exit code 0
+2025-10-24 10:23:36,860Z INFO  pdflatex - this process (22208) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: Lib\Miktex\texmfs\install\miktex\bin\x64\pdflatex.exe --version
+2025-10-24 10:23:36,860Z INFO  pdflatex - running on Windows 10.0.26100
+2025-10-24 10:23:36,862Z INFO  pdflatex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-24 10:23:36,864Z INFO  pdflatex - allowing known shell commands
+2025-10-24 10:23:36,877Z INFO  pdflatex - this process (22208) finishes with exit code 0
