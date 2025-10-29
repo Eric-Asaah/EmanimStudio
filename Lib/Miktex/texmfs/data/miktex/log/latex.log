@@ -1,0 +1,113 @@
+2025-10-29 06:42:55,672Z INFO  latex - this process (18552) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/a954525933c1a4e6.tex
+2025-10-29 06:42:55,672Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 06:42:55,676Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 06:42:55,681Z INFO  latex - allowing known shell commands
+2025-10-29 06:42:55,693Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 06:42:55,693Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 06:42:55,703Z INFO  latex - going to create file: latex.fmt
+2025-10-29 06:42:55,703Z INFO  latex.core - start process: miktex --enable-installer formats build latex --engine pdftex
+2025-10-29 06:43:10,206Z INFO  latex - installing package preview triggered by tex/latex/preview\preview.sty
+2025-10-29 06:43:10,218Z INFO  latex.packagemanager - going to download https://api2.miktex.org/hello
+2025-10-29 06:43:10,227Z FATAL latex.core - Couldn't resolve host name
+2025-10-29 06:43:10,227Z FATAL latex.core - Data: code="6", url="https://api2.miktex.org/hello"
+2025-10-29 06:43:10,227Z FATAL latex.core - Source: Libraries\MiKTeX\PackageManager\CurlWebSession.cpp:247
+2025-10-29 06:43:10,231Z FATAL latex - Couldn't resolve host name
+2025-10-29 06:43:10,232Z FATAL latex - Info: code="6", url="https://api2.miktex.org/hello"
+2025-10-29 06:43:10,232Z FATAL latex - Source: Libraries\MiKTeX\PackageManager\CurlWebSession.cpp
+2025-10-29 06:43:10,232Z FATAL latex - Line: 247
+2025-10-29 06:43:10,281Z INFO  latex - this process (18552) finishes with exit code 1
+2025-10-29 06:43:10,283Z WARN  latex.core - still open: C:/Users/user/Documents/EmanimStudio/Videos/Tex/a954525933c1a4e6.tex
+2025-10-29 06:43:10,283Z WARN  latex.core - still open: C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\tex/latex/standalone\standalone.cls
+2025-10-29 07:00:55,680Z INFO  latex - this process (20860) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/a954525933c1a4e6.tex
+2025-10-29 07:00:55,680Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:00:55,682Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:00:55,684Z INFO  latex - allowing known shell commands
+2025-10-29 07:00:55,694Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:00:55,694Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:00:55,703Z INFO  latex - going to create file: latex.fmt
+2025-10-29 07:00:55,704Z INFO  latex.core - start process: miktex --enable-installer formats build latex --engine pdftex
+2025-10-29 07:01:07,129Z INFO  latex - this process (20860) finishes with exit code 0
+2025-10-29 07:12:07,459Z INFO  latex - this process (15572) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/537437134694338f.tex
+2025-10-29 07:12:07,460Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:07,462Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:07,464Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:07,476Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:07,477Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:07,777Z INFO  latex - this process (15572) finishes with exit code 0
+2025-10-29 07:12:08,602Z INFO  latex - this process (20424) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/10483e632a3b5584.tex
+2025-10-29 07:12:08,602Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:08,604Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:08,607Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:08,617Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:08,618Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:08,857Z INFO  latex - this process (20424) finishes with exit code 0
+2025-10-29 07:12:09,598Z INFO  latex - this process (19096) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/383d1fb9b7d92e82.tex
+2025-10-29 07:12:09,598Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:09,600Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:09,602Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:09,613Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:09,613Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:09,851Z INFO  latex - this process (19096) finishes with exit code 0
+2025-10-29 07:12:10,586Z INFO  latex - this process (21712) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/4d4ab04218b2ff28.tex
+2025-10-29 07:12:10,586Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:10,588Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:10,591Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:10,601Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:10,601Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:10,863Z INFO  latex - this process (21712) finishes with exit code 0
+2025-10-29 07:12:11,588Z INFO  latex - this process (4788) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/e8ef069d7db70651.tex
+2025-10-29 07:12:11,588Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:11,590Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:11,592Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:11,602Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:11,602Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:11,834Z INFO  latex - this process (4788) finishes with exit code 0
+2025-10-29 07:12:13,148Z INFO  latex - this process (7104) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/8310d98a18c3a33e.tex
+2025-10-29 07:12:13,148Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:13,150Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:13,151Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:13,162Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:13,162Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:13,420Z INFO  latex - this process (7104) finishes with exit code 0
+2025-10-29 07:12:15,266Z INFO  latex - this process (3588) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/508db2725b85c225.tex
+2025-10-29 07:12:15,266Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:15,268Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:15,270Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:15,279Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:15,280Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:15,526Z INFO  latex - this process (3588) finishes with exit code 0
+2025-10-29 07:12:17,304Z INFO  latex - this process (10948) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/f4c4c4e31e2ddc49.tex
+2025-10-29 07:12:17,304Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:17,306Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:17,309Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:17,320Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:17,320Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:17,554Z INFO  latex - this process (10948) finishes with exit code 0
+2025-10-29 07:12:19,449Z INFO  latex - this process (10428) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/4fd7a3842c3fb96d.tex
+2025-10-29 07:12:19,449Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:19,451Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:19,452Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:19,462Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:19,462Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:19,695Z INFO  latex - this process (10428) finishes with exit code 0
+2025-10-29 07:12:21,917Z INFO  latex - this process (5372) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/25983c0d201dc21f.tex
+2025-10-29 07:12:21,917Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:21,919Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:21,920Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:21,930Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:21,930Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:22,169Z INFO  latex - this process (5372) finishes with exit code 0
+2025-10-29 07:12:22,890Z INFO  latex - this process (10560) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/79a897439acaa84f.tex
+2025-10-29 07:12:22,890Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:22,892Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:22,893Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:22,903Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:22,903Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:23,144Z INFO  latex - this process (10560) finishes with exit code 0
+2025-10-29 07:12:23,877Z INFO  latex - this process (18164) started by python in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: latex -interaction=batchmode -output-format=dvi -halt-on-error -output-directory=C:/Users/user/Documents/EmanimStudio/Videos/Tex C:/Users/user/Documents/EmanimStudio/Videos/Tex/bd709154edca0fd7.tex
+2025-10-29 07:12:23,877Z INFO  latex - running on Windows 10.0.26100
+2025-10-29 07:12:23,879Z INFO  latex - this is MiKTeX-PDFTEX 4.18.0 (1.40.25) (MiKTeX 24.1 Portable)
+2025-10-29 07:12:23,881Z INFO  latex - allowing known shell commands
+2025-10-29 07:12:23,891Z INFO  latex - setting output directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:23,891Z INFO  latex - setting aux directory: C:/Users\user\Documents\EmanimStudio\Videos\Tex
+2025-10-29 07:12:24,128Z INFO  latex - this process (18164) finishes with exit code 0

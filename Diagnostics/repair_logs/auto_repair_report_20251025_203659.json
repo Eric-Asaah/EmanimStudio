@@ -1,0 +1,19 @@
+{
+    "timestamp": "2025-10-25T20:36:59.894212",
+    "studio_root": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio",
+    "issues_found_count": 2,
+    "issues_fixed_count": 0,
+    "issues_found_details": [
+        "EmanimStudio.bat missing",
+        "MiKTeX directory missing"
+    ],
+    "issues_fixed_details": [],
+    "health_score": 20,
+    "final_status": "CHECK_COMPLETE",
+    "overall_health": "PROBLEMS_DETECTED",
+    "unfixed_issues_count": 2,
+    "unfixed_issues_details": [
+        "EmanimStudio.bat missing",
+        "MiKTeX directory missing"
+    ]
+}

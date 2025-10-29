@@ -1,19 +1,6 @@
-2025-10-20 08:48:01,930Z INFO  initexmf - this is MiKTeX Configuration Utility 5.5 (MiKTeX 24.1 Portable)
-2025-10-20 08:48:01,931Z INFO  initexmf - this process (20552) started by miktex-portable.exe in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: initexmf --default-paper-size=A4 --disable-installer --verbose
-2025-10-20 08:48:01,931Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
-2025-10-20 08:48:02,105Z INFO  initexmf - this process (20552) finishes with exit code 0
-2025-10-20 08:48:02,834Z INFO  initexmf - this is MiKTeX Configuration Utility 5.5 (MiKTeX 24.1 Portable)
-2025-10-20 08:48:02,835Z INFO  initexmf - this process (17928) started by miktex-portable.exe in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: initexmf --set-config-value=[MPM]AutoInstall=1 --disable-installer --verbose
-2025-10-20 08:48:02,835Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
-2025-10-20 08:48:02,836Z INFO  initexmf - Setting config value: [MPM]AutoInstall=1
-2025-10-20 08:48:02,957Z INFO  initexmf - this process (17928) finishes with exit code 0
-2025-10-20 08:48:16,562Z INFO  initexmf - this is MiKTeX Configuration Utility 5.5 (MiKTeX 24.1 Portable)
-2025-10-20 08:48:16,562Z INFO  initexmf - this process (3524) started by miktex-portable.exe in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio with command line: initexmf --report --disable-installer --verbose
-2025-10-20 08:48:16,562Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
-2025-10-20 08:48:16,572Z INFO  initexmf.core - start process: pdftex --miktex-disable-installer --miktex-disable-maintenance --miktex-disable-diagnose --version
-2025-10-20 08:48:17,474Z ERROR initexmf.core - Something is wrong with the PATH:
-2025-10-20 08:48:17,475Z ERROR initexmf.core - C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\user\AppData\Local\com.Langflow\uv;C:\Users\user\.local\bin;C:\Users\user\miniconda3;C:\Users\user\miniconda3\Library\mingw-w64\bin;C:\Users\user\miniconda3\Library\usr\bin;C:\Users\user\miniconda3\Library\bin;C:\Users\user\miniconda3\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\Python\Python313\Scripts
-2025-10-20 08:48:17,490Z INFO  initexmf.core - start process: pdftex --miktex-disable-installer --miktex-disable-maintenance --miktex-disable-diagnose --version
-2025-10-20 08:48:18,080Z ERROR initexmf.core - Something is wrong with the PATH:
-2025-10-20 08:48:18,081Z ERROR initexmf.core - C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\user\AppData\Local\com.Langflow\uv;C:\Users\user\.local\bin;C:\Users\user\miniconda3;C:\Users\user\miniconda3\Library\mingw-w64\bin;C:\Users\user\miniconda3\Library\usr\bin;C:\Users\user\miniconda3\Library\bin;C:\Users\user\miniconda3\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\Python\Python313\Scripts
-2025-10-20 08:48:18,127Z INFO  initexmf - this process (3524) finishes with exit code 0
+2025-10-29 06:56:55,852Z INFO  initexmf - this is MiKTeX Configuration Utility 5.5 (MiKTeX 24.1 Portable)
+2025-10-29 06:56:55,853Z INFO  initexmf - this process (17532) started by cmd in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64 with command line: initexmf --update-fndb
+2025-10-29 06:56:55,854Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
+2025-10-29 06:56:55,855Z INFO  initexmf - running: miktex --enable-installer fndb refresh
+2025-10-29 06:56:55,855Z INFO  initexmf.core - start process: miktex --enable-installer fndb refresh
+2025-10-29 06:57:01,955Z INFO  initexmf - this process (17532) finishes with exit code 0

@@ -1,0 +1,24 @@
+{
+    "timestamp": "2025-10-25T20:36:03.695873",
+    "studio_root": "C:\\Users\\user\\OneDrive\\Bilder\\Desktop\\EmanimStudio",
+    "issues_found_count": 3,
+    "issues_fixed_count": 2,
+    "issues_found_details": [
+        "python312._pth incomplete (missing: Lib/site-packages)",
+        "EmanimStudio.bat missing",
+        "MiKTeX directory missing"
+    ],
+    "issues_fixed_details": [
+        "Created/fixed python312._pth file",
+        "Created/updated helper batch scripts"
+    ],
+    "health_score": 36,
+    "final_status": "REPAIRS_ATTEMPTED",
+    "overall_health": "PROBLEMS_DETECTED",
+    "unfixed_issues_count": 3,
+    "unfixed_issues_details": [
+        "python312._pth incomplete (missing: Lib/site-packages)",
+        "EmanimStudio.bat missing",
+        "MiKTeX directory missing"
+    ]
+}
