@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/1185818338_3784113403_223132457.mp4'
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/624642324_3524866642_3480906495.mp4'
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/624642324_2585237217_3728988776.mp4'
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/624642324_1506497612_1255042496.mp4'
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/624642324_2961758188_2655104281.mp4'
-file 'file:C:/Users/user/OneDrive/Bilder/Desktop/EmanimStudio/Test_Output/videos/1. 2SetVennDiagram/480p15/partial_movie_files/VennDiagramAB/624642324_4277570474_3430135928.mp4'
