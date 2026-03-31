@@ -1,6 +1,0 @@
-2025-10-29 06:56:55,852Z INFO  initexmf - this is MiKTeX Configuration Utility 5.5 (MiKTeX 24.1 Portable)
-2025-10-29 06:56:55,853Z INFO  initexmf - this process (17532) started by cmd in directory C:\Users\user\OneDrive\Bilder\Desktop\EmanimStudio\Lib\Miktex\texmfs\install\miktex\bin\x64 with command line: initexmf --update-fndb
-2025-10-29 06:56:55,854Z INFO  initexmf - Operating on the private (per-user) MiKTeX setup
-2025-10-29 06:56:55,855Z INFO  initexmf - running: miktex --enable-installer fndb refresh
-2025-10-29 06:56:55,855Z INFO  initexmf.core - start process: miktex --enable-installer fndb refresh
-2025-10-29 06:57:01,955Z INFO  initexmf - this process (17532) finishes with exit code 0
