@@ -1,21 +1,66 @@
-# PyInstaller builds (temporary)
-dist/
-build/
-*.spec
-
-# Python cache (temporary)
+# ---------------------------
+# Python
+# ---------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Logs (temporary)
-*.log
+# ---------------------------
+# Build / Packaging
+# ---------------------------
+build/
+dist/
+*.spec
 
-# Truly temporary files
+# ---------------------------
+# Emanim Generated Files
+# ---------------------------
+Output/
+Test_Output/
+videos/
+partial_movie_files/
+
+# ---------------------------
+# Logs & temp
+# ---------------------------
+*.log
 *.tmp
 *.temp
 
-# System files
+# ---------------------------
+# Environment
+# ---------------------------
+.env
+venv/
+.env/
+
+# ---------------------------
+# IDE / Editor
+# ---------------------------
+.vscode/
+.idea/
+
+# ---------------------------
+# OS junk
+# ---------------------------
 Thumbs.db
 .DS_Store
+desktop.ini
+
+echo "Diagnose.bat" >> .gitignore
+echo "EmanimStudio.bat" >> .gitignore
+echo "EmanimStudioLauncher.bat" >> .gitignore
+echo "EmanimStudio_FIXED.bat" >> .gitignore
+echo "emanim_terminal.bat" >> .gitignore
+echo "fix_environment.bat" >> .gitignore
+echo "*.txt" >> .gitignore
+echo "Inno Script.iss" >> .gitignore
+echo "desktop.ini" >> .gitignore
+echo "EmanimStudioLogo.ico" >> .gitignore
+echo "test.py" >> .gitignore
+echo "Assets/" >> .gitignore
+echo "Diagnostics/" >> .gitignore
+echo "Lib/" >> .gitignore
+echo "Output/" >> .gitignore
+echo "Test_Output/" >> .gitignore
